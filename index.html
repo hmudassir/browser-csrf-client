@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Session signup</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 32rem; margin: 2rem auto; }
+    label { display: block; margin-top: 0.75rem; }
+    button { margin-top: 1rem; }
+    pre { background: #f4f4f4; padding: 0.75rem; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Sign up</h1>
+  <p>Calls a local API at <code>http://127.0.0.1:8080</code> with a session cookie and a CSRF header.</p>
+  <form id="form">
+    <label>Name <input name="name" value="Ada" required></label>
+    <label>Email <input name="email" type="email" value="ada@example.com" required></label>
+    <label>Password <input name="password" type="password" value="correct-horse-1" required minlength="12"></label>
+    <button type="submit">Create account</button>
+    <button type="button" id="me">Who am I?</button>
+  </form>
+  <pre id="out">Ready.</pre>
+  <script src="app.js"></script>
+</body>
+</html>
